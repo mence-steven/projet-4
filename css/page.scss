@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1
+{
+    font-family: 'Shrikhand', sans-serif;
+}
+
+boody{
+    width: 100%;
+}
+/****************taille********************/
+
+h1{
+    font-size: 5rem;
+}
+.logo_coeur .far{
+    font-size: 4rem;
+}
+.logo_coeur .fas{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.prix{
+    font-size: 2rem;
+}
+
+
+/**************** tete ********************/
+
+.logo_titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo_titre img {
+    width: 60%;
+}
+
+.logo_titre .retour{
+    font-size: 4rem;
+}
+
+/***************** photo *******************************/
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+/**************** repas titre *******************/
+.repas{
+    position: relative;
+    z-index: 2;
+    background: #EAEAEA;
+    border-radius: 35px 35px 0px 0px;
+    margin-top: -4rem;
+    padding: 2rem;
+}
+
+.repas .repas_titre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/***********coeur***************/
+.logo_coeur {
+    position: relative;
+}
+
+.logo_coeur i {
+    position: absolute;
+    font-size: 30px;
+    top: -30px;
+    right: 0px;
+}
+
+.logo_coeur .far {
+    color: black;
+}
+
+
+.logo_coeur .fas {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.logo_coeur:hover .fas {
+    opacity: 1;
+    color: #9356DC;
+    transition: opacity 0.3s ease;
+}
+
+/*******************repas**********************************/
+/*
+.entree h2{
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #99E2D0;
+    width: 5.5rem;
+}
+
+.plat h2{
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #99E2D0;
+    width: 5.5rem;
+}
+
+.dessert h2{
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #99E2D0;
+    width: 5.5rem;
+}*/
+
+@mixin barre_verte {
+    margin-top: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #99E2D0;
+    width: 5.5rem;
+  }
+  
+  .entree h2 {
+    @include barre_verte;
+  }
+  
+  .plat h2 {
+    @include barre_verte;
+  }
+  
+  .dessert h2 {
+    @include barre_verte;
+  }
+/****************************animation ****************************/
+
+.entree, .plat, .dessert {
+    opacity: 0;
+    animation: bouge 0.5s linear forwards;
+}
+
+.entree {
+    animation-delay: 0.5s;
+}
+
+.plat {
+    animation-delay: 1s;
+}
+
+.dessert {
+    animation-delay: 1.5s;
+}
+
+@keyframes bouge {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/***********************************bulle*************************/
+
+.bulle{
+    border-radius: 20px;
+    background: white;
+    margin-top: 20px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bulle .prix
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bulle .valide {
+    display: none;
+}
+/**********************animation valider********************/
+
+
+
+/**********************bouton commander*************/
+.bouton_commander{
+    display: flex;
+    justify-content: center;
+
+}
+
+.bouton
+{
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 1px 10px rgb(150, 149, 149);
+    border-radius: 50px;
+    padding: 15px 60px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: white;
+    font-size: large; 
+    background: linear-gradient(#FF79DA, #9356DC);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 2rem;
+}
+
+.bouton:hover{
+    box-shadow: 2px 2px 15px white;
+}
+
+/***********foter**********************/
+
+footer h3{
+    font-family: 'Shrikhand', sans-serif;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color:#383838;
+    color: white;
+    padding: 2rem 0;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.fin_bloc
+{
+    margin-left: 2rem;
+}
+
+footer h3
+{
+    size: 40px;
+    margin-bottom: 20px;
+}
+
+#fin_de_page a
+{
+    color: white;
+}
+
+footer li
+{
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+footer a
+{
+    text-decoration: none;
+    /* color: black; */
+}
