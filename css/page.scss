@@ -190,39 +190,31 @@ img{
 
 /***********************************bulle*************************/
 
-.bulle{
+
+.bulle {
     border-radius: 20px;
     background: white;
     margin-top: 20px;
-    /*padding: 1rem;*/
     display: flex;
-    justify-content: space-between;
     overflow: hidden;
 }
 
-.bulle .bulle_texte{
+.bulle .bulle_texte {
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 1rem;
 }
 
-.bulle .bulle_texte h3{
-    text-overflow: ellipsis;
-}
-
-.bulle .prix
-{
+.bulle .prix {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 1rem;
+    margin-right: 1rem;
+    margin-left: auto; 
 }
-/*
+
 .bulle .valide {
-    display: none;
-}
-*/
-.bulle .valide{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,21 +222,25 @@ img{
     background: #99E2D0;
     width: 5rem;
     margin-left: 1rem;
+    margin-right: -5rem;
 }
 
-.bulle .valide .rond{
+.bulle .valide .rond {
     width: 2rem;
     height: 2rem;
-    border-radius: 100px;
+    border-radius: 50%;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #99E2D0;
 }
-.bulle .valide .rond .fa-solid{
+
+.bulle .valide .rond .fa-solid {
     font-size: 1.5rem;
 }
+
+
 
 /**********************animation valider********************/
 
