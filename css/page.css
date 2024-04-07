@@ -58,6 +58,8 @@ p {
 
 .logo_titre .retour {
   font-size: 4rem;
+  position: absolute;
+  left: 50px;
 }
 
 /***************** photo *******************************/
@@ -187,19 +189,57 @@ img {
   border-radius: 20px;
   background: white;
   margin-top: 20px;
-  padding: 1rem;
+  /*padding: 1rem;*/
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
+}
+
+.bulle .bulle_texte {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 1rem;
+}
+
+.bulle .bulle_texte h3 {
+  text-overflow: ellipsis;
 }
 
 .bulle .prix {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  padding: 1rem;
 }
 
+/*
 .bulle .valide {
-  display: none;
+    display: none;
+}
+*/
+.bulle .valide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  background: #99E2D0;
+  width: 5rem;
+  margin-left: 1rem;
+}
+
+.bulle .valide .rond {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+}
+
+.bulle .valide .rond .fa-solid {
+  font-size: 1.5rem;
 }
 
 /**********************animation valider********************/
