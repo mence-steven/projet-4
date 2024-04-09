@@ -51,6 +51,7 @@ p{
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin: 1rem 0;
 }
 
 .logo_titre img {
@@ -192,6 +193,7 @@ img{
 
 
 .bulle {
+    cursor: pointer;
     border-radius: 20px;
     background: white;
     margin-top: 20px;
@@ -223,6 +225,7 @@ img{
     width: 5rem;
     margin-left: 1rem;
     margin-right: -5rem;
+    transition: all 0.5s ease;
 }
 
 .bulle .valide .rond {
@@ -244,12 +247,16 @@ img{
 
 /**********************animation valider********************/
 
+.bulle:hover .valide{
+    margin-right: 0;
+}
 
 
 /**********************bouton commander*************/
 .bouton_commander{
     display: flex;
     justify-content: center;
+    margin: 2rem 0;
 
 }
 
@@ -260,8 +267,8 @@ img{
     box-shadow: 1px 1px 10px rgb(150, 149, 149);
     border-radius: 50px;
     padding: 15px 60px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    /*margin-top: 20px;
+    margin-bottom: 25px;*/
     color: white;
     font-size: large; 
     background: linear-gradient(#FF79DA, #9356DC);
@@ -309,7 +316,7 @@ footer h3
 footer li
 {
     list-style-type: none;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 footer a
