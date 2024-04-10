@@ -193,12 +193,27 @@ img {
   margin-top: 20px;
   display: flex;
   overflow: hidden;
+  /*text-overflow: ellipsis;
+  white-space: nowrap;*/
 }
 
 .bulle .bulle_texte {
   overflow: hidden;
-  text-overflow: ellipsis;
+  /*text-overflow: ellipsis;
+  white-space: nowrap;*/
   padding: 1rem;
+}
+
+.bulle .bulle_texte h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bulle .bulle_texte p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bulle .prix {

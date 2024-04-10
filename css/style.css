@@ -96,10 +96,13 @@ body
   margin: 2rem 0rem;
 }
 .logo_titre img {
-  width: 200px;
+  /*width: 200px;
   height: 44px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;*/
+}
+.logo_titre h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 6rem;
 }
 
 .adresse {
@@ -110,7 +113,7 @@ body
   box-shadow: 1px 1px 10px black;
   display: flex;
   justify-content: center;
-  padding: 0.8rem 0;
+  padding: 1.5rem 0;
   color: black;
   margin-bottom: 1px;
 }
@@ -123,8 +126,8 @@ body
 }
 .adresse p {
   margin-left: 1.5rem;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2.5rem;
+  /*font-weight:bold;*/
 }
 
 .adresse .fa-solid {
@@ -143,7 +146,13 @@ body
 }
 
 .reservez h1 {
-  margin-bottom: 10px;
+  margin: 2rem 8rem 1rem 8rem;
+}
+
+.reservez p {
+  font-size: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .reservez .bouton {
@@ -151,9 +160,8 @@ body
   border: none;
   box-shadow: 1px 1px 10px rgb(150, 149, 149);
   border-radius: 50px;
-  padding: 15px 30px 15px 30px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  padding: 30px 40px 30px 40px;
+  margin: 4rem 0;
   color: white;
   font-size: large;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -181,6 +189,7 @@ li {
   border-radius: 20px;
   margin: 2rem 0rem;
   position: relative;
+  font-weight: bold;
 }
 
 .fonctionnement_liste .nombre {
@@ -198,7 +207,7 @@ li {
 
 .fonctionnement_liste .fa-solid {
   color: #7E7E7E;
-  padding: 0 2rem;
+  padding: 0 5rem 0 3rem;
 }
 
 .fonctionnement_liste .fa-solid:hover {
@@ -346,6 +355,7 @@ footer h3 {
 footer li {
   list-style-type: none;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 footer a {
