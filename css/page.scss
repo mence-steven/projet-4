@@ -119,27 +119,6 @@ img{
 }
 
 /*******************repas**********************************/
-/*
-.entree h2{
-    margin-top: 3rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 4px solid #99E2D0;
-    width: 5.5rem;
-}
-
-.plat h2{
-    margin-top: 3rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 4px solid #99E2D0;
-    width: 5.5rem;
-}
-
-.dessert h2{
-    margin-top: 3rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 4px solid #99E2D0;
-    width: 5.5rem;
-}*/
 
 @mixin barre_verte {
     margin-top: 3rem;
@@ -200,14 +179,10 @@ img{
     margin-top: 20px;
     display: flex;
     overflow: hidden;
-    /*text-overflow: ellipsis;
-    white-space: nowrap;*/
 }
 
 .bulle .bulle_texte {
     overflow: hidden;
-    /*text-overflow: ellipsis;
-    white-space: nowrap;*/
     padding: 1rem;
 }
 
@@ -283,8 +258,6 @@ img{
     box-shadow: 1px 1px 10px rgb(150, 149, 149);
     border-radius: 50px;
     padding: 15px 60px;
-    /*margin-top: 20px;
-    margin-bottom: 25px;*/
     color: white;
     font-size: large; 
     background: linear-gradient(#FF79DA, #9356DC);
@@ -338,5 +311,4 @@ footer li
 footer a
 {
     text-decoration: none;
-    /* color: black; */
 }

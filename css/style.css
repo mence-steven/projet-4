@@ -4,23 +4,11 @@
   font-family: "Roboto", sans-serif;
 }
 
-bbody {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-
 /****************taille********************/
 h1 {
   font-size: 4rem;
-} /*
-.logo_coeur .far{
-    font-size: 4rem;
 }
-.logo_coeur .fas{
-    font-size: 4rem;
-}*/
+
 h2 {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
@@ -40,14 +28,16 @@ p {
 /*************animation******************/
 .animation {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   font-size: 10rem;
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: tombe 3s linear forwards;
+  animation: tombe 4s linear forwards;
   z-index: 3;
   position: absolute;
 }
@@ -64,38 +54,23 @@ p {
     opacity: 0;
   }
 }
-/*teste une postion absolu sur animation*/
-/*
-body
-{
-    animation: bouge 2s forwards; 
+.chargement_logo {
+  animation: tourne 3s linear infinite;
 }
-@keyframes bouge 
-{
-    0% {
-      opacity: 0; 
-      background-color: #9356DC; 
-    }
-    50% {
-      opacity: 1; 
-      background-color: #FF79DA; 
-    }
-    100% {
-      opacity: 1; 
-      background-color: linear-gradient(#FF79DA, #9356DC);
-    }
+
+@keyframes tourne {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-*/
 /****************tete********************/
 .logo_titre {
   display: flex;
   justify-content: center;
   margin: 2rem 0rem;
-}
-.logo_titre img {
-  /*width: 200px;
-  height: 44px;
-  object-fit: fill;*/
 }
 .logo_titre h1 {
   font-family: "Shrikhand", sans-serif;
@@ -124,7 +99,6 @@ body
 .adresse p {
   margin-left: 1.5rem;
   font-size: 2.5rem;
-  /*font-weight:bold;*/
 }
 
 .adresse .fa-solid {
@@ -286,29 +260,6 @@ img {
   color: black;
 }
 
-/*
-.logo_coeur .fas {
-    opacity: 0;
-    transition: color 0.3s ease;
-}
-
-.logo_coeur .fas:hover {
-    opacity: 1;
-    color: #9356DC;
-}
-*/
-/*
-.logo_coeur .fas {
-    opacity: 0;
-    transition: opacity 0.3s ease; 
-}
-
-.logo_coeur:hover .fas {
-    opacity: 1;
-    color: #9356DC;
-    transition: opacity 0.3s ease; 
-}
-*/
 .logo_coeur .fas {
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -328,7 +279,6 @@ footer h3 {
 footer {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
   background-color: #383838;
   color: white;
   padding-top: 2rem;
@@ -357,5 +307,4 @@ footer li {
 
 footer a {
   text-decoration: none;
-  /* color: black; */
 }/*# sourceMappingURL=style.css.map */
