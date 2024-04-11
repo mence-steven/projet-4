@@ -14,16 +14,13 @@ bbody {
 /****************taille********************/
 h1 {
   font-size: 4rem;
+} /*
+.logo_coeur .far{
+    font-size: 4rem;
 }
-
-.logo_coeur .far {
-  font-size: 4rem;
-}
-
-.logo_coeur .fas {
-  font-size: 4rem;
-}
-
+.logo_coeur .fas{
+    font-size: 4rem;
+}*/
 h2 {
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
@@ -280,7 +277,7 @@ img {
 
 .logo_coeur i {
   position: absolute;
-  font-size: 30px;
+  font-size: 4rem;
   top: -15px;
   right: 0px;
 }

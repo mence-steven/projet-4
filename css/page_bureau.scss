@@ -1,0 +1,39 @@
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .logo_titre img{
+        width: 25%;
+    }
+
+    .repas {
+        margin: -10rem 10rem 0 10rem;
+        padding: 5rem 10rem;
+    }
+
+    .repas .repas_titre{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo_coeur i{
+        right: -120px;
+    }
+
+
+    footer .fin_bloc{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .fin_bloc h3{
+        font-size: 1rem;
+        margin: 0 1rem 0 5rem;
+    }
+
+    .menu li{
+        display: inline-block;
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+}
