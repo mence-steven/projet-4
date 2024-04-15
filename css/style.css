@@ -4,6 +4,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  background: green;
+}
+
 /****************taille********************/
 h1 {
   font-size: 4rem;
@@ -55,7 +59,7 @@ p {
   }
 }
 .chargement_logo {
-  animation: tourne 3s linear infinite;
+  animation: tourne 3s linear;
 }
 
 @keyframes tourne {
@@ -72,7 +76,7 @@ p {
   justify-content: center;
   margin: 2rem 0rem;
 }
-.logo_titre h1 {
+.logo_titre .titre {
   font-family: "Shrikhand", sans-serif;
   font-size: 6rem;
 }
@@ -153,6 +157,11 @@ li {
   margin: 4rem 3rem;
 }
 
+.fonctionnement_liste {
+  display: flex;
+  flex-direction: column;
+}
+
 .fonctionnement_liste li {
   background: #f6f6f6;
   padding: 2rem;
@@ -193,6 +202,11 @@ li {
   background-color: #f6f6f6;
   width: 100%;
   padding: 4rem 3rem;
+}
+
+.restaurants_card {
+  display: flex;
+  flex-direction: column;
 }
 
 .restaurants_1 {

@@ -1,5 +1,9 @@
-@media (min-width: 769px) and (max-width: 1024px){
+@media (min-width: 769px) {
 
+    body{
+        background: red;
+    }
+    
     .logo_titre img{
         width: 25%;
     }
