@@ -321,4 +321,69 @@ footer li {
 
 footer a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background: red;
+  }
+  .restaurants_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .restaurants_1 {
+    width: 45%;
+    height: auto;
+  }
+  .restaurants_1_texte .texte h3 {
+    font-size: 2rem;
+  }
+  .logo_coeur i {
+    top: -35px;
+    right: 5px;
+    font-size: 3rem;
+  }
+  /**********footer***********/
+  footer .fin_bloc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .fin_bloc h3 {
+    font-size: 1rem;
+    margin: 0 1rem 0 5rem;
+  }
+  .menu li {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background: blue;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .fonctionnement_liste .fa-solid {
+    padding: 0 1rem 0 1rem;
+  }
+  .fonctionnement_liste .nombre {
+    top: 10px;
+  }
+  .fonctionnement_liste li {
+    padding: 1.5rem 2rem;
+    width: 24%;
+  }
+  .fonctionnement_liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
