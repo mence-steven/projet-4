@@ -8,36 +8,32 @@ h1 {
   font-family: "Shrikhand", sans-serif;
 }
 
-body {
-  background: green;
-}
-
 /****************taille********************/
 h1 {
-  font-size: 5rem;
+  font-size: 1.6rem;
 }
 
 .logo_coeur .far {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .logo_coeur .fas {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .prix {
@@ -58,9 +54,9 @@ p {
 }
 
 .logo_titre .retour {
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
-  left: 50px;
+  left: 15px;
 }
 
 /***************** photo *******************************/
@@ -95,7 +91,7 @@ img {
 .logo_coeur i {
   position: absolute;
   font-size: 30px;
-  top: -30px;
+  top: -20px;
   right: 0px;
 }
 
