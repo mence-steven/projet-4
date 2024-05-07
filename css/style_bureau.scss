@@ -1,5 +1,6 @@
 @media screen and (min-width: 768px) and (max-width:1023px) {
-       .logo_coeur i{
+    
+    .logo_coeur i{
         top: -22px;
         font-size: 3rem;
     }
@@ -59,13 +60,13 @@
     }
 
     .restaurants_1_texte .texte h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .logo_coeur i {
-        top: -35px;
-        right: 5px;
-        font-size: 3rem;
+        top: -20px;
+        right: 0px;
+        font-size: 2rem;
     }
 
     /**********footer***********/
@@ -88,4 +89,15 @@
         font-size: 1rem;
     }
 
+    .fonctionnement {
+        max-width: 970px;
+        margin: auto;
+    }
+
+    .restaurants{
+        max-width: 970px;
+        margin: auto;
+        border: 2px solid transparent;
+        box-shadow: 0px 9999px 0px 9999px #f6f6f6;
+    }
 }
